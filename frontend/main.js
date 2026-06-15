@@ -24,7 +24,7 @@ const EXPERIENCE = [
   {
     role: "AI Intern",
     company: "AgriOne · APU Smart Farm",
-    period: "2024 – Present",
+    period: "march 2026 – Present",
     points: [
       "Built ML-powered NPK nutrient prediction dashboard integrated into a React farm management system.",
       "Trained and deployed regression models on sensor data; served via FastAPI with real-time UI updates.",
