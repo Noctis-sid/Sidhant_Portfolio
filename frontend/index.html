@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sidhant Pujari | ML Engineer & Full-Stack Developer</title>
+  <meta name="description" content="ML Engineer and Full-Stack Developer specialising in AI-powered web systems. MSc Artificial Intelligence at APU Malaysia." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="header">
+    <div class="container header-inner">
+      <button class="logo" onclick="scrollTo('hero')">&lt;SP /&gt;</button>
+      <nav class="desktop-nav">
+        <button onclick="scrollTo('about')">About</button>
+        <button onclick="scrollTo('skills')">Skills</button>
+        <button onclick="scrollTo('experience')">Experience</button>
+        <button onclick="scrollTo('projects')">Projects</button>
+        <button onclick="scrollTo('contact')">Contact</button>
+        <button class="btn-primary" onclick="scrollTo('contact')">Hire Me</button>
+      </nav>
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+        <span id="menu-icon">☰</span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobile-nav">
+      <button onclick="scrollTo('about')">About</button>
+      <button onclick="scrollTo('skills')">Skills</button>
+      <button onclick="scrollTo('experience')">Experience</button>
+      <button onclick="scrollTo('projects')">Projects</button>
+      <button onclick="scrollTo('contact')">Contact</button>
+      <button class="btn-primary" onclick="scrollTo('contact')">Hire Me</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="section-white">
+    <div class="container">
+      <p class="mono-label">Hi, I'm</p>
+      <h1 class="hero-name">Sidhant Pujari</h1>
+      <h2 class="hero-subtitle">ML Engineer &amp; Full-Stack Developer</h2>
+      <p class="hero-desc">Building intelligent web systems — from NPK-predicting farm dashboards to NLP pipelines and sign language AI. MSc Artificial Intelligence @ APU Malaysia.</p>
+      <div class="hero-cta">
+        <button class="btn-primary btn-lg" onclick="scrollTo('projects')">View Projects →</button>
+        <button class="btn-outline btn-lg" onclick="scrollTo('contact')">Get In Touch</button>
+      </div>
+      <div class="hero-stats">
+        <div><p class="stat-label">Currently</p><p class="stat-value">MSc AI @ APU Malaysia</p></div>
+        <div><p class="stat-label">Experience</p><p class="stat-value">2+ yrs production dev</p></div>
+        <div><p class="stat-label">Open To</p><p class="stat-value">ML / Full-Stack roles</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section-gray">
+    <div class="container">
+      <p class="mono-label">About Me</p>
+      <h2 class="section-title">Building at the intersection<br />of AI and the web</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a <strong>Computer Science graduate</strong> pursuing an MSc in Artificial Intelligence at Asia Pacific University, Kuala Lumpur — with 2+ years of production full-stack experience across startups and research labs.</p>
+          <p>My work spans the full stack and the ML pipeline: I've built React dashboards, trained and deployed nutrient-prediction models for smart vertical farms, and shipped NLP classifiers to production.</p>
+          <p>I gravitate toward roles where engineering rigour and applied ML meet real-world constraints — shipping things that actually run in production, not just notebooks.</p>
+        </div>
+        <div class="about-cards" id="about-cards"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section-white">
+    <div class="container">
+      <p class="mono-label">Technical Skills</p>
+      <h2 class="section-title">What I work with</h2>
+      <div class="skills-grid" id="skills-grid"></div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section-gray">
+    <div class="container">
+      <p class="mono-label">Work Experience</p>
+      <h2 class="section-title">Professional journey</h2>
+      <div class="experience-list" id="experience-list"></div>
+      <div class="education-card reveal">
+        <h3 class="education-title">Education</h3>
+        <div class="edu-item">
+          <p class="edu-degree">MSc Artificial Intelligence</p>
+          <p class="edu-school">Asia Pacific University (APU), Kuala Lumpur, Malaysia</p>
+          <p class="edu-period">Currently pursuing</p>
+        </div>
+        <div class="edu-divider"></div>
+        <div class="edu-item">
+          <p class="edu-degree">BTech Computer Science &amp; Engineering</p>
+          <p class="edu-school">Completed</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section-white">
+    <div class="container">
+      <p class="mono-label">Portfolio</p>
+      <h2 class="section-title">Featured projects</h2>
+      <p class="section-desc">Real systems built across ML, NLP, robotics, and full-stack web — for research labs, startups, and clients.</p>
+      <div class="projects-grid" id="projects-grid"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section-gray">
+    <div class="container contact-inner">
+      <p class="mono-label">Get in touch</p>
+      <h2 class="section-title">Let's build something</h2>
+      <p class="section-desc">Available for ML engineering roles, full-stack projects, and research collaborations. Open to relocation.</p>
+      <div class="contact-cards" id="contact-cards"></div>
+      <a href="mailto:pujarisidhant@gmail.com" class="btn-primary btn-lg">Send an Email →</a>
+      <div class="contact-form-wrap">
+        <h3 class="form-heading">Or send a message</h3>
+        <form id="contact-form" class="contact-form" onsubmit="submitForm(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-lg" id="submit-btn">Send Message</button>
+          <p id="form-status" class="form-status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-logo">&lt;SP /&gt;</p>
+        <p class="footer-sub">ML Engineer &amp; Full-Stack Developer</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/Noctis-sid" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/sidhantpujari" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:pujarisidhant@gmail.com">Email</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Sidhant Pujari · Built with HTML, CSS &amp; JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 24px;
+  width: 100%;
+}
+
+.section-white { background: var(--color-white); }
+.section-gray  { background: var(--color-gray-50); }
+
+/* Section spacing */
+.section-hero,
+.section-about,
+.section-skills,
+.section-experience,
+.section-projects,
+.section-contact {
+  padding: var(--section-pad);
+}
+
+.section-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+
+/* Section text */
+.mono-label {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-gray-400);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-size: clamp(36px, 5vw, 60px);
+  font-weight: 800;
+  color: var(--color-black);
+  letter-spacing: -2px;
+  line-height: 1.05;
+  margin-bottom: 60px;
+}
+
+.section-desc {
+  font-size: 18px;
+  color: var(--color-gray-500);
+  max-width: 560px;
+  line-height: 1.7;
+  margin-bottom: 60px;
+  margin-top: -44px;
+}

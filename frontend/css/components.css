@@ -1,0 +1,421 @@
+/* ===== BUTTONS ===== */
+.btn-primary {
+  background: var(--color-black);
+  color: var(--color-white);
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-primary:hover {
+  background: #222;
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--color-black);
+  border: 2px solid var(--color-black);
+  border-radius: var(--radius-sm);
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-outline:hover {
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-gray-700);
+  border: 1.5px solid var(--color-gray-300);
+  border-radius: var(--radius-sm);
+  padding: 7px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-secondary:hover {
+  border-color: var(--color-black);
+  color: var(--color-black);
+}
+
+.btn-lg {
+  padding: 14px 28px;
+  font-size: 16px;
+  border-radius: var(--radius-md);
+}
+
+/* ===== CARDS ===== */
+.card {
+  background: var(--color-white);
+  border: 2px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  transition: var(--transition);
+}
+
+.card:hover {
+  border-color: #aaa;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+/* ===== BADGES ===== */
+.badge {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  padding: 3px 9px;
+  background: var(--color-gray-100);
+  border: 1px solid var(--color-gray-200);
+  border-radius: 20px;
+  color: var(--color-gray-700);
+  display: inline-block;
+}
+
+/* ===== ABOUT HIGHLIGHT CARDS ===== */
+.about-card {
+  background: var(--color-white);
+  border: 1.5px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  padding: 20px 24px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  transition: var(--transition);
+}
+
+.about-card:hover { border-color: var(--color-gray-400); }
+
+.about-card-icon {
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.about-card h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: 5px;
+}
+
+.about-card p {
+  font-size: 13px;
+  color: var(--color-gray-500);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ===== SKILL CARD ===== */
+.skill-card {
+  background: var(--color-gray-50);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  padding: 24px 20px;
+}
+
+.skill-card h3 {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-black);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 14px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+/* ===== EXPERIENCE CARD ===== */
+.exp-card {
+  background: var(--color-white);
+  border: 2px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  padding: 32px 36px;
+  transition: var(--transition);
+}
+
+.exp-card:hover { border-color: #aaa; }
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.exp-role {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--color-black);
+  letter-spacing: -0.5px;
+  margin-bottom: 4px;
+}
+
+.exp-company {
+  font-size: 15px;
+  color: var(--color-gray-500);
+}
+
+.exp-period {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-gray-400);
+  padding-top: 4px;
+  flex-shrink: 0;
+}
+
+.exp-points {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.exp-point {
+  display: flex;
+  gap: 12px;
+  font-size: 15px;
+  color: var(--color-gray-600);
+  line-height: 1.6;
+}
+
+.exp-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-black);
+  flex-shrink: 0;
+  margin-top: 9px;
+}
+
+/* ===== EDUCATION ===== */
+.education-card {
+  margin-top: 24px;
+  background: var(--color-white);
+  border: 2px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  padding: 28px 36px;
+}
+
+.education-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: 16px;
+}
+
+.edu-item { padding: 4px 0; }
+
+.edu-degree {
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: 2px;
+}
+
+.edu-school {
+  font-size: 14px;
+  color: var(--color-gray-500);
+  margin-bottom: 2px;
+}
+
+.edu-period {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-gray-400);
+}
+
+.edu-divider {
+  height: 1px;
+  background: var(--color-gray-200);
+  margin: 14px 0;
+}
+
+/* ===== PROJECT CARD ===== */
+.project-card {
+  background: var(--color-white);
+  border: 2px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: var(--transition);
+}
+
+.project-card:hover { border-color: #aaa; box-shadow: 0 4px 20px rgba(0,0,0,0.07); }
+
+.project-category {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-gray-400);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.project-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--color-black);
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+  margin: 4px 0 6px;
+}
+
+.project-desc {
+  font-size: 14px;
+  color: var(--color-gray-500);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.project-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+}
+
+/* ===== CONTACT CARDS ===== */
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 36px;
+  width: 100%;
+  max-width: 680px;
+}
+
+.contact-card {
+  background: var(--color-white);
+  border: 2px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  transition: var(--transition);
+}
+
+.contact-card:hover { border-color: var(--color-gray-400); }
+
+.contact-card-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-gray-400);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 6px;
+}
+
+.contact-card-value {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-black);
+  word-break: break-all;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+}
+
+.contact-card-value a {
+  color: var(--color-black);
+  text-decoration: none;
+}
+
+.copy-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--color-gray-400);
+  flex-shrink: 0;
+  padding: 2px;
+  transition: var(--transition);
+}
+
+.copy-btn:hover { color: var(--color-black); }
+.copy-btn.copied { color: var(--color-green); }
+
+/* ===== CONTACT FORM ===== */
+.contact-form-wrap {
+  width: 100%;
+  max-width: 680px;
+  margin-top: 48px;
+}
+
+.form-heading {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: 24px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-gray-700);
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px 14px;
+  border: 1.5px solid var(--color-gray-200);
+  border-radius: var(--radius-md);
+  font-size: 15px;
+  color: var(--color-black);
+  background: var(--color-white);
+  transition: var(--transition);
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--color-black);
+}
+
+.form-status {
+  font-size: 14px;
+  min-height: 20px;
+  font-weight: 500;
+}
+
+.form-status.success { color: var(--color-green); }
+.form-status.error   { color: #dc2626; }
