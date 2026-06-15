@@ -180,7 +180,7 @@ function initNav() {
   });
 }
 
-function scrollTo(id) {
+function scrollToSection(id) {
   document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   const mobileNav = document.getElementById("mobile-nav");
   const menuIcon  = document.getElementById("menu-icon");
